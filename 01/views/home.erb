@@ -1,3 +1,16 @@
 <h1>AJAX Atomics - 01</h1>
 
 <script type="text/javascript" src="/global.js"></script>
+
+<p>
+ 1. Why are you able to make requests to **/info1** and **/info2** even though there are no route handlers for those paths defined in **app.rb**?
+ 
+ Well I think it's because it's using a request with the XMLHttpREquest. I believe with the get that ask for the text file info1 or info 2.
+ 
+ 2. Why is the XHR object's request path **/info1** instead of **/public/info1**?
+ 
+ Because it is in the same folder of where the requested item is at.
+ 
+ 3. Within the `addEventListener` function, what does `this` represent?
+ 
+ I think the this response is meaning the loading of the info response. So loading up the info text document.
